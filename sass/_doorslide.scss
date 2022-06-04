@@ -1,0 +1,29 @@
+.textAndDoor{
+  position: relative;
+}
+
+.doorSlide{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 
+  transform 1s;
+}
+
+.doorSlide:hover{
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0%;
+}
+
+.assets{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
