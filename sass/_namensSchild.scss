@@ -1,40 +1,5 @@
-main {
-  max-width: 100%;
-  max-height: 100%;
-}
 
-.textAndDoor {
-  width: 100%;
-  height: calc(10vh + 1vw);
-  position: relative;
-  border: 2px solid black;
-}
-
-.doorSlide {
-  width: 50%;
-  height: 100%;
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 1s;
-}
-
-.doorSlide:hover {
-  position: absolute;
-  transform: translateX(100%);
-}
-
-.assets {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.namensSchild {
+.namensSchild{
   width: 300px;
   height: 200px;
   background-color: black;
@@ -42,14 +7,15 @@ main {
   padding: 25px 25px;
 }
 
-.plakette {
+.plakette{
   width: 250px;
   height: 150px;
   background-image: url(../src/images/bronze.jpg);
   padding: 25px 25px;
+ 
 }
 
-.meinName {
+.meinName{
   width: 200px;
   height: 100px;
   background-image: url(../src/images/goldmetallic.jpg);
@@ -65,7 +31,7 @@ main {
 .kreis1,
 .kreis2,
 .kreis3,
-.kreis4 {
+.kreis4{
   width: 50px;
   height: 50px;
   background-color: black;
@@ -73,22 +39,21 @@ main {
   position: absolute;
 }
 
-.kreis1 {
+.kreis1{
   top: 0;
   left: 0;
 }
-
-.kreis2 {
+.kreis2{
   top: 0;
   right: 0;
 }
 
-.kreis3 {
+.kreis3{
   right: 0;
   bottom: 0;
 }
 
-.kreis4 {
+.kreis4{
   bottom: 0;
   left: 0;
 }
@@ -96,22 +61,21 @@ main {
 .schraube1,
 .schraube2,
 .schraube3,
-.schraube4 {
+.schraube4{
   width: 15px;
   height: 15px;
   border-radius: 50%;
   position: absolute;
 }
 
-.schraube1 {
+.schraube1{
   top: 10px;
   left: 10px;
   background-image: url(../src/images/schraubenkopf.jpg);
   background-size: 50px;
   background-position: center;
 }
-
-.schraube2 {
+.schraube2{
   top: 10px;
   right: 10px;
   background-image: url(../src/images/schraubenkopf.jpg);
@@ -119,7 +83,7 @@ main {
   background-position: center;
 }
 
-.schraube3 {
+.schraube3{
   right: 10px;
   bottom: 10px;
   background-image: url(../src/images/schraubenkopf.jpg);
@@ -127,18 +91,10 @@ main {
   background-position: center;
 }
 
-.schraube4 {
+.schraube4{
   bottom: 10px;
   left: 10px;
   background-image: url(../src/images/schraubenkopf.jpg);
   background-size: 50px;
   background-position: center;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
