@@ -15,7 +15,7 @@
  
 }
 
-.meinName{
+.schild{
   width: 200px;
   height: 100px;
   background-image: url(../src/images/goldmetallic.jpg);
@@ -26,6 +26,23 @@
   font-size: 2rem;
   font-weight: bold;
   box-shadow: 5px 5px 5px;
+  
+}
+
+.meinName{
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(10) forwards;
+}
+
+@keyframes typing{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 10ch;
+  }
 }
 
 .kreis1,
