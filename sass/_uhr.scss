@@ -1,0 +1,92 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uhr{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+@keyframes tick {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.zeiger{
+  width: 10px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 1);
+  transform-origin: center 100%;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  
+  animation: tick 4s linear infinite;
+}
+
+.textItem1,
+.textItem2,
+.textItem3,
+.textItem4{
+  position: absolute;
+  z-index: 0;
+  visibility: visible;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes erscheinen {
+  0%{
+    visibility: visible;
+  }
+  25%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+.textItem1{
+  animation: erscheinen 4s infinite;
+  background-color: aqua;
+  border-radius: 0 300px 0 0;
+  left: 50%;
+ 
+}
+
+.textItem2{
+  animation: erscheinen 4s 1s infinite;
+  background-color: red;
+  border-radius:0 0 300px 0;
+  left: 50%;
+  top: 50%;
+}
+
+.textItem3{
+  animation: erscheinen 4s 2s infinite;
+  background-color: green;
+  border-radius: 0  0 0 300px ;
+  right: 50%;
+  top: 50%;
+}
+
+.textItem4{
+  animation: erscheinen 4s 3s infinite;
+  background-color: yellow;
+  border-radius: 300px 0  0 0  ;
+  right: 50%;
+}
